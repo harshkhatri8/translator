@@ -1,0 +1,144 @@
+.main-div{
+    width :70vw;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    margin-top: 70px;
+}
+.container{
+    width: 90%;
+    padding: 30px;
+    background-color: aliceblue;
+    margin: auto;
+    border-radius: 7px;
+    margin-top: 30px;
+    box-shadow: 0px 8px 20px 0px grey;
+}
+
+.wrapper{
+    width: 100%;
+ 
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px ;
+    align-items: center;
+}
+.translate-area{
+    width: 100%;
+
+    height: 50vh;
+    display: flex;
+    
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+}
+
+.original-language{
+    font-size: 16px;
+}
+.translated-language{
+    font-size: 16px;
+
+}
+.from-text{
+    width: 50%;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 18px;
+    box-shadow: 0px 7px 10px -5px grey;
+}
+.to-text{
+    width: 50%;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    font-size: 18px;
+
+    padding-left: 15px;
+    padding-top: 15px;
+    box-shadow: 0px 7px 10px -5px grey;
+}
+.from-text::placeholder{
+    font-size: 20px;
+    font-weight: 100;
+    color: rgb(126, 125, 120);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.to-text::placeholder{
+    font-size: 20px;
+    font-weight: 100;
+
+    color: rgb(126, 125, 120);
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.copy-icon{
+    width: 30px;
+}
+ 
+ .volume-icon{
+
+    width: 30px;
+ }  
+.row{
+    list-style: none;
+ 
+}
+.icons{
+    width: 10vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.exchange{
+    list-style: none;
+
+}
+.arrow{
+    list-style: none;
+    width: 30px;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+   padding: 0px;
+}
+.select-btn{
+    font-size: 14px;
+}
+  
+.row3 { 
+    width: calc(100% - 10px); 
+    max-width: 650px; 
+    margin-top: 15px; 
+    margin-bottom: 20px; 
+  } 
+    
+  .btn { 
+    width: 100%; 
+    position: relative; 
+    padding: 10px; 
+    outline: none; 
+    background-color: #6d9eed; 
+    color: #fff; 
+    border: 2px solid #6d9eed; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    letter-spacing: 0.5px; 
+  } 
