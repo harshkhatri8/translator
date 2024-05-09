@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./style.css";
+import "./mobile.css";
 import axios from "axios";
 import languageList from "./language.json";
 
@@ -21,9 +22,9 @@ function Translate() {
 
   const handleTranslate = async () => {
     if (!inputText || !inputFormat || !outputFormat) return;
-    document.querySelector(".fa.fa-spinner.fa-spin").style.display = "block";
-    document.querySelector(".translate").style.display = "none";
-
+    // document.querySelector(".fa.fa-spinner.fa-spin").style.display = "block";
+    // document.querySelector(".translate").style.display = "none";
+    setTranslatedText("translating....")
     const encodedParams = new URLSearchParams();
     encodedParams.set("q", inputText);
     encodedParams.set("target", outputFormat);
@@ -76,6 +77,7 @@ function Translate() {
           >
             {Object.keys(languageList).map((key, index) => {
               const language = languageList[key];
+            
               return (
                 <option key={index} value={key}>
                   {language.name}
@@ -122,7 +124,7 @@ function Translate() {
 
         <div className="row3">
           <button className="btn" onClick={handleTranslate}>
-            <i className="fa fa-spinner fa-spin"></i>
+            {/* <i className="fa fa-spinner fa-spin"></i> */}
             <span className="translate">Translate</span>
           </button>
         </div>
